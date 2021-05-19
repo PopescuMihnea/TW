@@ -1,0 +1,538 @@
+body
+{
+    background-image:url("https://www.techadvisor.com/cmsdata/features/3512328/check_computer_specification_thumb800.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Courier New';
+}
+
+
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+input
+{
+    background-color: black;
+    color:greenyellow;
+    border-radius: 10px;
+    border: 2px solid green;
+    width:300px;
+    height:50px;
+}
+
+input:focus
+{
+    border: 2px solid red;
+    outline:none;
+}
+
+.container
+{
+    padding-top:10px;
+    margin:auto;
+    width:80%;
+    background-color: white;
+    min-width: 360px;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+    border-bottom: 5px solid orange;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.navigare
+{
+    display:flex;
+    margin-top:5%;
+    justify-content: space-around;
+    min-width: 360px;
+    background-color: black;
+    border: 5px solid darkmagenta;
+    border-radius:5px;
+}
+
+/*.navigare @media{max-width:1280px}
+{
+
+}*/
+
+.button{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.button:hover 
+{ 
+    transform: scale(1.1); 
+}
+
+.nav_button
+{
+    background-color:yellow;
+    width: 150px;
+    border-radius: 5px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  white-space:nowrap;
+}
+.nav_button:hover
+{
+    background-color:orange;
+}
+.nav_button:active
+{
+    background-color:red;
+}
+
+.home_title
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    margin:0px;
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.home_instr
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin:20px;
+}
+
+.section_home
+{
+    border-bottom: 2px solid grey;
+    padding: 20px;
+    text-align: center;
+}
+
+.section_about
+{
+    padding: 20px;
+    text-align: center;
+}
+
+.jos
+{
+    padding:20px;
+    text-align: center;
+    color:grey;
+}
+
+.titlu
+{
+    text-align: center;
+    color:wheat;
+    font-weight: 600;
+    font-size:50px;
+    font-family:sans-serif;
+}
+
+.container_admin
+{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom:30px;
+    border-bottom: 2px solid grey;
+}
+
+.button_admin
+{
+    background-color:green;
+    color: orange;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding:10px;
+    width:200px;
+    margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+    
+}
+
+.button_admin:hover
+{
+  background-color: darkgreen;
+  color:orange;
+}
+
+.button_admin:active
+{
+    background-color:red;
+}
+
+.gui_background
+{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  background-size: cover;
+  overflow:scroll;
+}
+
+.choose_container
+{
+  background-color: white;
+   margin:auto;
+   width:70%;
+   margin-top:10%;
+   border: 5px solid orange;
+   border-radius: 5px;
+   max-width: 700px;
+}
+
+.add_gui_txt
+{
+    padding-top:10px;
+    text-align: center;
+    color: grey;
+    font-size: 30px;
+}
+
+.container_choose_part
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:10px;
+    padding-bottom: 30px;
+    justify-items: center;
+}
+
+.close_button
+{
+    position:relative;
+    top:0px;
+    left:90%;
+    width:10%;
+    height:10%;
+    cursor: pointer;
+}
+
+.input_fields
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-bottom: 30px;
+    justify-items: center;
+}
+
+.add_button
+{
+    display:flex;
+    margin:auto;
+}
+
+.edit_container
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    border-bottom: 2px solid grey;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.container_part
+{
+    width: 300px;
+    font-family: sans-serif;
+    display:flex;
+    padding: 5px;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+.container_part:hover
+{
+    background-color: darkgreen;
+}
+
+.container_part:hover > a
+{
+    display: block;
+}
+
+.container_part:hover > .div_edit
+{
+    display: flex;
+}
+
+.loading
+{
+    text-align: center;
+}
+
+.div_edit
+{
+    display:flex;
+    padding:10px;
+    justify-content: center;
+}
+
+.delete
+{
+    background-color: red;
+}
+
+.delete:hover
+{
+    background-color: darkred;
+}
+
+.div_edit
+{
+    display: none;
+}
+
+.temp
+{
+    display: flex;
+}
+
+.choose
+{
+    text-align: center;
+}
+
+.container_inapoi
+{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected
+{
+    background-color: darkviolet;
+}
+
+.div_about
+{
+    display:flex;
+    border-bottom: 2px solid grey;
+}
+
+.contact_txt
+{
+    text-align: center;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+.aside_about
+{
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+    margin-right: 10px;
+    border-left: 5px solid grey;
+    align-items: center;
+}
+
+.div_social
+{
+    display:flex;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.div_social:hover
+{
+    color:red;
+    transform: scale(1.1);
+}
+
+.div_build
+{
+    margin-top: 30px;
+    border-bottom: 2px solid grey;
+}
+
+.build_info
+{
+    background-color: black;
+    border: 5px solid wheat;
+    border-radius: 5px;
+    width:50%;
+    margin:auto;
+    margin-bottom: 100px;
+    color: yellowgreen;
+}
+
+.info_title
+{
+    text-align: center;
+}
+
+.txt_info
+{
+    margin-left: 10px;
+}
+
+.build
+{
+    display:flex;
+    margin-bottom:30px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.build p
+{
+    font-size: 20px;
+}
+
+.build_part
+{
+    background-color: grey;
+}
+.build_part:hover
+{
+    background-color:grey;
+}
+.button_select
+{
+    margin-left: 20px;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.build_buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left:20px;
+}
+
+.grey
+{
+    background-color: grey;
+}
+
+.grey:hover
+{
+    background-color: grey;
+}
+
+.container_choose_part
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+.build_img
+{
+    max-height: 200px;
+    width: auto;
+}
+
+.mijloc
+{
+    margin:auto;
+    display: none;
+}
+
+@media (max-width:1280px)
+{
+    .navigare
+    {
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        min-width: 700px;
+        margin:auto;
+    }
+    .container
+    {
+        min-width: 700px;
+    }
+    .div_about
+    {
+        flex-direction: column;
+    }
+    .aside_about
+    {
+        border-left: none;
+        border-top: 5px solid grey;
+    }
+    .input_fields
+    {
+        grid-template-columns: auto;
+        justify-items: start;
+    }
+    .container_choose_part
+    {
+        grid-template-columns: auto;
+    }
+    .edit_container
+    {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:768px)
+{
+    .container_admin
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigare
+    {
+        min-width: 360px;
+    }
+    .container
+    {
+        min-width: 360px;
+    }
+   .edit_container
+   {
+       grid-template-columns: auto;
+   }
+   .build
+   {
+       flex-direction: column;
+       align-items: center;
+   }
+}
+
